@@ -218,7 +218,7 @@ void CreateSprites(sf::Texture texture_bank[4], sf::Sprite sprite_bank[12]) /// 
     for (int i=1; i < 11; i++)
         sprite_bank[i].setScale(2, 2);
 
-    // Set origin the center of the image, not doing this offsets all visuals, I don't completely understand why it works like that.
+    // Set origin the center of the image, not doing this offsets all visuals, did it this way because placing them from the top left corner is harder
     for (int i = 0; i < 5; i++)
     {
         sprite_bank[i+1].setOrigin(sf::Vector2f(26, 29));
